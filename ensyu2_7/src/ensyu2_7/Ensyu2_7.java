@@ -25,7 +25,7 @@ public class Ensyu2_7 {
 		//-1～-9の乱数を生成変数に代入
 		int secondRandom=randomGeneration.nextInt(9)-9;
 		//10～99の乱数を生成して変数に代入
-		int thirdRandom=randomGeneration.nextInt(89)+10;
+		int thirdRandom=randomGeneration.nextInt(90)+10;
 		//1～9の乱数を表示
 		System.out.println(firstRandom);
 		//-1～-9の乱数を表示
