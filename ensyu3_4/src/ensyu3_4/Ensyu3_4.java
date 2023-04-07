@@ -28,20 +28,18 @@ public class Ensyu3_4 {
 		System.out.print("整数値2:");
 		//インスタンスから2つ目の入力された値を受け取る
 		int secondNumber=scannerInt.nextInt();
-		
 		//1つ目に入力された値のほうが大きい場合
 		if(firstNumber>secondNumber) {
-			//1つ目の値を表示
-			System.out.println(firstNumber+"のほうが大きいです。");
+			//変数名を表示
+			System.out.println("firstNumberのほうが大きいです。");
 		//2つ目に入力された値のほうが大きい場合
 		}else if(firstNumber<secondNumber) {
-			//2つ目の値を表示
-			System.out.println(secondNumber+"のほうが大きいです。");
+			//変数名を表示
+			System.out.println("secondNumberのほうが大きいです。");
 		//数値が同値な場合
 		}else if(firstNumber==secondNumber){
 			//同値であることを表示
-			System.out.println(firstNumber+"と"+secondNumber+"は同じ値です。");
+			System.out.println("firstNumberとsecondNumberは同じ値です。");
 		}
 	}
-
 }
