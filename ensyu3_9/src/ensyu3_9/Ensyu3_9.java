@@ -20,15 +20,15 @@ public class Ensyu3_9 {
 	public static void main(String[] args) {
 		//Scannerクラスのインスタンスを作成
 		//引数:標準入力System.in
-		Scanner scannerInt=new Scanner(System.in);
+		Scanner scannerDouble=new Scanner(System.in);
 		//1つ目の実数の入力を促す
 		System.out.print("実数値1:");
 		//インスタンスから入力された値を受け取る
-		double firstNumber=scannerInt.nextDouble();
+		double firstNumber=scannerDouble.nextDouble();
 		//2つ目の実数の入力を促す
 		System.out.print("実数値2:");
 		//インスタンスから入力された値を受け取る
-		double secondNumber=scannerInt.nextDouble();
+		double secondNumber=scannerDouble.nextDouble();
 		//2つの実数を比較して大きいほうの値をmaximumValueに代入
 		double maximumValue = firstNumber > secondNumber ? firstNumber : secondNumber;
 		//maximumValueを表示
