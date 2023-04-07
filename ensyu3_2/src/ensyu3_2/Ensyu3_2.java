@@ -38,8 +38,8 @@ public class Ensyu3_2 {
 		}else if(firstNumber%secondNumber!=0) {
 			//約数でないことを表示
 			System.out.println(secondNumber+"は"+firstNumber+"の約数ではありません。");
-		//入力された値が0の場合
 		}
+		
 	}
 
 }
