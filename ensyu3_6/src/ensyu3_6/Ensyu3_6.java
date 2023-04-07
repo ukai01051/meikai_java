@@ -31,7 +31,7 @@ public class Ensyu3_6 {
 			//負の数であることを表示
 			System.out.println("正でない値が入力されました。");
 		//10の倍数の場合
-		}else if(firstNumber%5==0) {
+		}else if(firstNumber%10==0) {
 			//10の倍数であることを表示
 			System.out.println("その値は10の倍数です。");
 		//10の倍数以外の場合
