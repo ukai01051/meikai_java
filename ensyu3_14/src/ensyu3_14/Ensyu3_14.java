@@ -32,7 +32,7 @@ public class Ensyu3_14 {
 			
 		//変数aを表示
 		System.out.println("変数aは"+firstNumber+"です。");
-		//変数bを表示j
+		//変数bを表示
 		System.out.println("変数bは"+secondNumber+"です。");
 		//2つの整数が等しい場合
 		if(firstNumber==secondNumber)
