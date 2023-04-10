@@ -41,15 +41,15 @@ public class Ensyu3_13 {
 		//fistNumberが最大値の場合
 		if(firstNumber==maximumValue) {
 			//最大値firstNumberを除いた2の整数を比較して大きいほうを表示
-			System.out.println(secondNumber > thirdNumber ? secondNumber : thirdNumber);
+			System.out.println(secondNumber >= thirdNumber ? secondNumber : thirdNumber);
 		//secondNumberが最大値の場合
 		} else if (secondNumber==maximumValue) {
 			//最大値secondNumberを除いた2の整数を比較して大きいほうを表示
-			System.out.println(firstNumber > thirdNumber ? firstNumber : thirdNumber);
+			System.out.println(firstNumber >= thirdNumber ? firstNumber : thirdNumber);
 		//thirdNumberが最大値の場合
 		}else if (thirdNumber==maximumValue) {
 			//最大値thirdNumberを除いた2の整数を比較して大きいほうを表示
-			System.out.println(firstNumber > secondNumber ? firstNumber : secondNumber);
+			System.out.println(firstNumber >= secondNumber ? firstNumber : secondNumber);
 		}
 	}
 }
