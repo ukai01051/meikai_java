@@ -36,12 +36,12 @@ public class Ensyu4_13 {
 		}while(inputNumber<=0);
 		
 		//合計値用変数を宣言して初期化
-		int totalValue=1;
+		int totalValue=0;
 		
 		//カウント数値が入力値より大きければループ抜け
 		for (int countValue=1;countValue<=inputNumber;countValue++) {
-			//インクリメントしているカウント数値と合計の積を合計用の変数に代入
-			totalValue=totalValue*countValue;
+			//インクリメントしているカウント数値と合計の和を合計用の変数に代入
+			totalValue=totalValue+countValue;
 		//1から入力値までの和を表示
 		}System.out.println("1から"+inputNumber+"までの和は"+totalValue+"です。");
 	}
