@@ -29,7 +29,16 @@ public class Ensyu3_14 {
 		System.out.print("変数b:");
 		//インスタンスから入力された値を受け取る
 		int secondNumber=scannerInt.nextInt();
-			
+
+		//1つ目に入力された数のほうが大きかった場合
+		if(firstNumber>secondNumber) {
+			//ソート用の変数を宣言して1つ目の整数の値を入力
+			int sortValue=firstNumber;
+			//2つ目に入力された値をfirstNumberに代入
+			firstNumber=secondNumber;
+			//2つの整数の入れ替えが完了
+			secondNumber=firstNumber;
+		}
 		//変数aを表示
 		System.out.println("変数aは"+firstNumber+"です。");
 		//変数bを表示
