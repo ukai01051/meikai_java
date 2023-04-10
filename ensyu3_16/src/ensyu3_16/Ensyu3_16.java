@@ -64,11 +64,11 @@ public class Ensyu3_16 {
 		}
 		//ソートする趣旨を表示
 		System.out.println("a≦bとなるようにソートしました。");
-		//降順に表示
+		//昇順に表示
 		System.out.println("変数aは"+firstNumber+"です。");
-		//降順に表示
+		//昇順に表示
 		System.out.println("変数bは"+secondNumber+"です。");
-		//降順に表示
+		//昇順に表示
 		System.out.println("変数bは"+thirdNumber+"です。");
 				
 	}
