@@ -21,10 +21,17 @@ public class Ensyu4_16 {
 		//Scannerクラスのインスタンスを作成
 		//引数:標準入力System.in
 		Scanner scannerInteger=new Scanner(System.in);
-		//整数の入力を促す
-		System.out.print("何個*を表示しますか:");
-		//インスタンスから入力された値を受け取る
-		int inputValue=scannerInteger.nextInt();
+		//入力値を代入する変数を宣言
+		int inputValue;
+		//後判定ループ文
+		do {
+			//整数の入力を促す
+			System.out.print("何個*を表示しますか:");
+			//インスタンスから入力された値を受け取る
+			inputValue=scannerInteger.nextInt();
+		//正の数が入力されたらループ抜け
+		}while(inputValue<=0);
+		
 		//カウントが入力値を超えたらループ抜け
 		for(int countValue=1;countValue<=inputValue;countValue++) {
 			//＊を表示
