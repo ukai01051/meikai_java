@@ -21,16 +21,25 @@ public class Ensyu4_8 {
 		//Scannerクラスのインスタンスを作成
 		//引数:標準入力System.in
 		Scanner scannerInt=new Scanner(System.in);
-		//整数の入力を促す
-		System.out.print("整数値:");
-		//インスタンスから入力値を受け取ってinputNumberに代入
-		int inputNumber=scannerInt.nextInt();
+		//入力値を代入する変数を宣言
+		int inputValue;
+		
+		//後判定ループ文
+		do {
+			//整数の入力を促す
+			System.out.print("整数値:");
+			//インスタンスから入力値を受け取ってinputNumberに代入
+			inputValue=scannerInt.nextInt();
+		//正の数が入力されたらループ抜け
+		}while(inputValue<=0);
+
 		//カウント用の変数countValueを宣言して初期化
 		int countValue=0;
+		
 		//入力値用の変数の値が0になったらループ抜け
-		while(inputNumber>0) {
+		while(inputValue>0) {
 			//入力値の変数の値を10で割った商を代入
-			inputNumber=inputNumber/10;
+			inputValue=inputValue/10;
 			//カウント用の変数をインクリメント
 			countValue++;
 		}
