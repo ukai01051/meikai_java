@@ -4,12 +4,18 @@ package ensyu4_3;
 import java.util.Scanner;
 /*
  * クラス名:Ensyu4_3
- * 概要:
- * 作成者:ukai作成日:2023/04/07
+ * 概要:小さいほうから大きいほうへの数値を小さいほうから順に表示
+ * 作成者:ukai
+ * 作成日:2023/04/07
  */
 public class Ensyu4_3 {
 	/*
-	 * 関数名:main概要:引数:戻り値:作成者:ukai作成日:2023/04/07
+	 * 関数名:main
+	 * 概要:小さいほうから大きいほうへの数値を小さいほうから順に表示
+	 * 引数:なし
+	 * 戻り値:なし
+	 * 作成者:ukai
+	 * 作成日:2023/04/07
 	 */
 	public static void main(String[] args) {
 		//Scannerクラスのインスタンスを作成
@@ -27,6 +33,7 @@ public class Ensyu4_3 {
 		int outputValue=0;
 		//値が大きい整数用の変数を宣言して初期化
 		int maximumValue=0;
+		
 		//最初に入力された整数のほうが小さい場合
 		if (firstNumber<secondNumber) {
 			//1つ目に入力された整数値を表示
@@ -43,7 +50,8 @@ public class Ensyu4_3 {
 			outputValue=secondNumber;
 			//値が大きい用の変数に1つ目に入力された値を代入
 			maximumValue=firstNumber;
-		//後判定ループ文
+		
+			//後判定ループ文
 		}do {
 			//2つの整数値が同じ場合
 			if(firstNumber==secondNumber)
