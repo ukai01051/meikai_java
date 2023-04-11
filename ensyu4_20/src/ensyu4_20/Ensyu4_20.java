@@ -28,13 +28,18 @@ public class Ensyu4_20 {
 		
 		//カウントが入力値を超えたらループ抜け
 		for(int heightValue=1;heightValue<=inputValue;heightValue++) {
-				//カウントが入力値を超えたらループ抜け
-				for(int widthValue=1;widthValue<=inputValue;widthValue++) {
-						//入力値分の*を横に表示
-						System.out.print("*");
-				}
-				//入力値分の改行を表示
-				System.out.println();
+			//カウントが入力値を超えたらループ抜け
+			for(int widthValue=1;widthValue<=inputValue;widthValue++) {
+				//入力値分の*を横に表示
+				System.out.print("*");
+			}
+			//入力値分の改行を表示
+			System.out.println();
+		}
+		//0以下が入力された場合
+		if(inputValue<=0) {
+			//メッセージを表示
+			System.out.println("0以下が入力されました。");
 		}
 	}
 
