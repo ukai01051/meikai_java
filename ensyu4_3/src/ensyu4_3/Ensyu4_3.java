@@ -4,14 +4,14 @@ package ensyu4_3;
 import java.util.Scanner;
 /*
  * クラス名:Ensyu4_3
- * 概要:小さいほうから大きいほうへの数値を小さいほうから順に表示
+ * 概要:小さいほうから大きいほうへの数値を昇順に表示
  * 作成者:ukai
  * 作成日:2023/04/07
  */
 public class Ensyu4_3 {
 	/*
 	 * 関数名:main
-	 * 概要:小さいほうから大きいほうへの数値を小さいほうから順に表示
+	 * 概要:小さいほうから大きいほうへの数値を昇順に表示
 	 * 引数:なし
 	 * 戻り値:なし
 	 * 作成者:ukai
@@ -29,10 +29,8 @@ public class Ensyu4_3 {
 		System.out.print("整数値2:");
 		//インスタンスから入力された値を受け取る
 		int secondNumber=scannerInt.nextInt();
-		//出力用の変数を宣言して初期化
-		int outputValue=0;
-		//値が大きい整数用の変数を宣言して初期化
-		int maximumValue=0;
+		//出力用と大きい値を格納する変数を宣言して初期化
+		int outputValue=0,maximumValue=0;
 		
 		//最初に入力された整数のほうが小さい場合
 		if (firstNumber<secondNumber) {
@@ -50,13 +48,15 @@ public class Ensyu4_3 {
 			outputValue=secondNumber;
 			//値が大きい用の変数に1つ目に入力された値を代入
 			maximumValue=firstNumber;
+		}
 		
-			//後判定ループ文
-		}do {
+		//後判定ループ文
+		do{
 			//2つの整数値が同じ場合
-			if(firstNumber==secondNumber)
+			if(firstNumber==secondNumber) {
 				//無限ループ回避のためループ抜け
 				break;
+			}
 			//出力用の変数の値に＋1
 			outputValue =outputValue+1;
 			//出力用変数の値を表示
