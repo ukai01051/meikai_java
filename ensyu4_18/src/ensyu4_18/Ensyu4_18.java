@@ -20,12 +20,20 @@ public class Ensyu4_18 {
 	public static void main(String[] args) {
 		//Scannerクラスのインスタンスを作成
 		//引数:標準入力System.in
-		Scanner scannerInteger=new Scanner(System.in);
-		//整数の入力を促す
-		System.out.print("nの値:");
-		//インスタンスから入力された値を受け取る
-		int inputValue=scannerInteger.nextInt();
+		Scanner scanInteger=new Scanner(System.in);
+		
+		//入力値を代入する変数を宣言
+		int inputValue;
+		//後判定ループ文
+		do {
+			//整数の入力を促す
+			System.out.print("nの値:");
+			//インスタンスから入力された値を受け取る
+			inputValue=scanInteger.nextInt();
+		//正の数が入力されたらループ抜け
+		}while(inputValue<=0);
 
+		
 		//カウントが入力値を超えたらループ抜け
 		for(int countValue=1;countValue<=inputValue;countValue++) {
 				//1からnまでの二乗を表示
