@@ -42,7 +42,7 @@ public class Ensyu4_1 {
 				System.out.println("その値は0です。");
 			}
 			//繰り返し行うか選択を促す
-			System.out.println("もう一度？ 1...Yes/0...No:");
+			System.out.print("もう一度？ 1...Yes/1以外...No:");
 			//インスタンスから入力された数値を受け取る
 			retryValue=scanInt.nextInt();
 		//繰り返し用の関数に応じて繰り返すか判断
