@@ -23,10 +23,12 @@ public class Ensyu4_5 {
 		//Scannerクラスのインスタンスを作成
 		//引数:標準入力System.in
 		Scanner scanInt=new Scanner(System.in);
+		
 		//カウントダウンする趣旨を表示
 		System.out.println("カウントダウンします。");
 		//カウントダウン用の変数を宣言
 		int countValue;
+		
 		//後判定ループ文
 		do {
 			//整数値の入力を促す
@@ -37,9 +39,9 @@ public class Ensyu4_5 {
 		}while(countValue<=0);
 		
 		//カウントダウン用の変数が0になったらループ抜け
-		while(countValue>=0)
+		while(countValue>=0) {
 			//カウントダウンを表示してデクリメント
 			System.out.println(--countValue);
+		}	
 	}
-
 }
