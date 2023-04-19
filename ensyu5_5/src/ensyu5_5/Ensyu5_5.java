@@ -21,7 +21,7 @@ public class Ensyu5_5 {
 		//Scannerクラスのインスタンスを作成
 		//引数:標準入力System.in
 		Scanner scanInteger=new Scanner(System.in);
-		//入力値を代入する変数を宣言
+		//入力値を代入する変数を宣言 
 		int firstNumber=0,secondNumber=0,thirdNumber=0;
 		
 			//整数の入力を促す
